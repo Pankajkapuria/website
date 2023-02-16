@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@1&display=swap');
+
+:root {
+    --font1: 'Poppins', sans-serif;
+    --font2: 'Roboto', sans-serif;
+    --primary_colur: rgba(165, 42, 42, 0.454);
+}
+
+::-webkit-scrollbar{
+    width: 10px
+    
+}
+::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 10px;
+    /* background-color: red; */
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(23, 106, 106, 0.654);
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+.navigation {
+    font-family: var(--font1);
+    /* height: 4.9vw; */
+    /* height: 60px; */
+    /* background-color: red;  */
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    padding-top: 2vh;
+    
+}
+
+.nav_left {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.logo_img{
+    margin-top: 10px;
+    margin-left: 20px;
+    width:60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.nav_left>ul {
+    /* margin-left: 30px; */
+    align-items: center;
+}
+
+.nav_left>ul>li {
+    list-style: none;
+    margin: 0 18px;
+    font-family: var(--font2);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav_left>ul>li>a:hover {
+    color: var(--primary_colur);
+}
+
+
+
+
+
+.content {
+    
+    height: 100%;
+    /* background-color: rgba(208, 208, 238, 0.176); */
+    font-family: var(--font2);
+    position: relative;
+    padding: 20px 0px;
+}
+.content::after{
+    content:"";
+    background:url(../2.jpg) no-repeat center;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.15;
+    background-size: cover;
+    z-index: -1;
+}
+
+.content-right img {
+    width: 250px;
+    height: 250px;
+    border: 2px solid #0000008a;
+    border-radius: 100%;
+}
+
+.content-left {
+    width: 60%;
+    gap: 1.3vw;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding-left: 15px;
+    /* display: flex; */
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.content-right {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hr_length {
+    margin-top: 30px;
+    width: 95vw;
+}
+
+.home_articles {
+    position: relative;
+    margin-top: 2vh;
+    padding:1vh 3vh;;
+    /* height: 20vw; */
+   background-color: rgba(208, 208, 238, 0.176);
+}
+
+
+.home_article {
+    align-self: center;
+    padding-top: 3vh;
+    margin-top: 3vw;
+}
+
+
+.home_article>img{
+    width: 190px;
+    height: 190px;
+    /* border: 2px solid black;
+    border-radius: 25%;
+    padding: 3px; */
+}
+
+.home_artical_content{
+    /* align-self: center; */
+    flex-direction: column;
+    padding:0vw 2vw;
+    width: 40vw;
+     /* flex-direction: column;
+     justify-content: center; */
+}
+.home_artical_content>p{
+    padding-bottom: 10px;
+}
+.home_artical_content>a>h2{
+    font-size: 1.3rem;
+}
+.apanimg{
+    margin-bottom: 0.7vw;
+}
+.apanimg>p{
+    padding-left: 0.7vw;
+}
+.apanimg>img{
+    /* width: 2vw;
+    height: 2vw; */
+     width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    /* padding-right: 15px; */
+}
+
+
+
+.footer {
+    height: 80px;
+    background-color:purple;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.footer>a {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: rgb(232, 225, 225);
+}
+
+
+
+.post_img{
+    height: 50vh;
+    overflow: hidden;
+    margin-top: 3vh;
+}
+.post_img>img{
+    /* width: 70vw; */
+    width: 100%;
+    /* height: 20vh; */
+    
+}
+
+.year_article{
+    flex-direction: column;
+    width: 100px;
+    height: 100px;
+    /* background-color: red; */
+    position: absolute;
+    right: 100px;
+    /* top:50px */
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.year_article >select{
+    height: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+  
+}

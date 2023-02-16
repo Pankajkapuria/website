@@ -1,0 +1,131 @@
+@media screen and (max-width:1050px) {
+    .navigation {
+        flex-direction: column;
+        margin-bottom: 20px;
+        position: relative;
+        height: 100%;
+    }
+     
+    .navigation::after {
+        content: "";
+        width: 100%;
+        background: url(../Screenshot\ \(28\).png) no-repeat center;
+        position: absolute;
+        height: inherit;
+        background-size: cover;
+        opacity: 0.1;
+        z-index: -1;
+        border-radius: 20px;
+        height: 100%;
+    }
+
+    .nav_left {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .nav_rigth {
+        margin-left: 40px;
+    }
+
+    .content-right {
+        display: none;
+    }
+
+    .content-left {
+        width: 100%;
+    }
+
+    .from_input {
+        padding: 0;
+        width: 140px;
+        border: 2px solid rgba(0, 0, 0, 0.56);
+    }
+
+    .btn {
+        padding: 0;
+        width: 70px;
+        border: 2px solid rgba(0, 0, 0, 0.564);
+    }
+
+    .home_article {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .home_artical_content {
+        width: 100%;
+    }
+
+    .apanimg {
+        justify-content: center;
+        padding-left: 0;
+        margin-top: 10px;
+    }
+
+    .year_article {
+        right: 5px;
+        top: 2px;
+        font-size: .8rem;
+        width: 80px;
+        height: 37px;
+
+    }
+
+
+
+    /* for content page */
+    .connect_input{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+    }
+    .inout_In_contant{
+        width: 390px;
+    }
+
+
+    .author_bio{
+        display: none;
+        width: 0px;
+    }
+    .author_name{
+        flex-direction: column;
+    }
+    .iblog_div{
+        width: 100%;
+        align-items: center;
+        margin-left: 14px;
+    }
+    .socale_icons{
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:394px) {
+    .nav_rigth {
+        margin-left: 0px;
+    }
+
+    .nav_left>ul>li {
+        margin: 0 10px;
+        font-size: 20px;
+    }
+
+    .max_width_1 {
+        width: 100%;
+    }
+    .inout_In_contant{
+        width: 150px;
+        padding: 0;
+    }
+}

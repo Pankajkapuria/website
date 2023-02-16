@@ -1,0 +1,40 @@
+.content_content {
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    /* height: 20vw; */
+    /* background-color: rgba(208, 208, 238, 0.176); */
+    font-family: var(--font2);
+    position: relative;
+}
+
+.content_form {
+    flex-direction: column;
+    position: relative;
+    height: 71.5vh;
+}
+
+.content_form::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    background: url(../7.jpg) no-repeat center;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+.inout_In_contant {
+    border: 2px solid black;
+    border-radius: 8px;
+    font-family: var(--font1);
+    background-color: transparent;
+    transition: all 0.3s ease-out;
+    width: 41vw;
+    /* width: 500px; */
+    padding: 0.5vh 1vh;
+    margin: 1.5vh 0vh;
+    font-size: 0.9rem;
+}
+
+
